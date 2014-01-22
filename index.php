@@ -4,10 +4,9 @@ require_once __DIR__.'/vendor/autoload.php';
 
 use Symfony\Component\HttpFoundation\Request;
 
-$request = Request::createFromGlobals();
 $routes = include __DIR__.'/config/routes.php';
+$sc = include __DIR__.'/config/container.php';
+$sc->setParameter('debug', false);
 
-$debug = false;
-$framework = new Gecky\Framework($routes, $debug);
-
-$framework->handle($request)->send();
+$request = Request::createFromGlobals();
+$sc->get('gecky.framework')->handle($request)->send();

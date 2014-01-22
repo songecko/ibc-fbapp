@@ -1,0 +1,53 @@
+html, body.mobile {
+	width: 100%;
+	height: auto;
+}
+
+body.mobile section#like {
+}
+
+body.mobile section#participate {
+}
+
+body.mobile section#participate .participateButton {
+	width: 50%;
+	top: 52%;
+	right: 30px;
+}
+
+body.mobile section#participate .participateButton img {
+	width: 100%;
+}
+
+body.mobile section#form {
+}
+
+body.mobile section#form form {
+	top: 36%;
+}
+
+body.mobile section#thanks {
+}
+
+body.mobile section#thanks .exitButton {
+	width: 50%;
+	top: 62%;
+	right: 30px;
+}
+
+body.mobile section#thanks .exitButton img {
+	width: 100%;
+}
+
+body.mobile #footer {
+	width: 100%;
+	bottom: 25px;
+}
+
+body.mobile #footer a.privacyButton {
+	margin-left: 15px;	
+}
+
+body.mobile #footer a.rulesButton {
+	margin-right: 20px;
+}

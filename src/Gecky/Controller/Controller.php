@@ -6,8 +6,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Templating\PhpEngine;
 use Symfony\Component\Templating\TemplateNameParser;
 use Symfony\Component\Templating\Loader\FilesystemLoader;
+use Symfony\Component\DependencyInjection\ContainerAware;
 
-class Controller
+class Controller extends ContainerAware
 {
 	protected $templating;
 	
@@ -19,7 +20,10 @@ class Controller
 	
 	protected function render($name, array $parameters = array())
 	{
-		$view = $this->templating->render('layout.php', array('content' => $this->templating->render($name, $parameters)));
+		$view = $this->templating->render('layout.php', array(
+			'content' => $this->templating->render($name, $parameters),
+			'container' => $this->container 
+		));
 		return new Response($view);
 	}
 	
