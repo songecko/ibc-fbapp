@@ -3,6 +3,12 @@ html, body.mobile {
 	height: auto;
 }
 
+body.mobile .modal-content {
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);	
+}
+
 body.mobile section#like {
 }
 
@@ -11,7 +17,7 @@ body.mobile section#participate {
 
 body.mobile section#participate .participateButton {
 	width: 50%;
-	top: 52%;
+	top: 63%;
 	right: 30px;
 }
 
@@ -23,7 +29,17 @@ body.mobile section#form {
 }
 
 body.mobile section#form form {
-	top: 36%;
+	top: 26%;
+	left: 28%;
+	width: 63%;
+}
+
+body.mobile section#form form .conectateFb {
+	margin-left: -17%;
+}
+
+body.mobile section#form form fieldset input.fullInput {
+	background-size: contain;
 }
 
 body.mobile section#thanks {
@@ -40,8 +56,9 @@ body.mobile section#thanks .exitButton img {
 }
 
 body.mobile #footer {
-	width: 100%;
-	bottom: 25px;
+	width: auto;
+	bottom: 3%;
+	right: 18%;
 }
 
 body.mobile #footer a.privacyButton {
@@ -50,4 +67,45 @@ body.mobile #footer a.privacyButton {
 
 body.mobile #footer a.rulesButton {
 	margin-right: 20px;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	section#form form fieldset {
+		top: 55px;
+	}
+	
+	section#form form fieldset label.fullLabel {
+		font-size: 9px;
+	}
+	
+	body.mobile section#form form fieldset input.fullInput {
+		height: auto;
+	}
+	
+	section#form form fieldset label.fullLabel {
+		margin: 0;
+	}
+	
+	section#form form fieldset p.terms {
+		margin-top: 5px;
+	}
+	
+	section#form form fieldset p input {
+		margin: 0;
+	}
+	
+	section#form form fieldset p label {
+		font-size: 9px;
+		max-width: 150px;
+	}
+	
+	section#form form .actions {
+		top: 399px;
+		left: 44px;
+	}
+	
+	section#form form .actions button {
+		width: 100%;
+	}
 }

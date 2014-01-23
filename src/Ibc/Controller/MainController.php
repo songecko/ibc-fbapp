@@ -23,7 +23,7 @@ class MainController extends Controller
 		
 		if (!$isMobile && $signedRequest == null)
 		{
-			return new RedirectResponse($facebook->getTabUrl());
+			//return new RedirectResponse($facebook->getTabUrl());
 		}
 				
 		if($signedRequest && !$signedRequest['page']['liked'])
@@ -85,6 +85,38 @@ class MainController extends Controller
 		}
 		
 		return new Response(json_encode($response));
+	}
+	
+	public function registerListAction(Request $request)
+	{
+		//Guardado en base de datos
+		$query = 'SELECT * FROM user';
+		$result = $this->container->get('database')->execute($query);
+		
+		$view = $this->templating->render('Main/registerList.php', array(
+			'result' => $result 
+		));
+		
+		return new Response($view);
+	}
+	
+	public function downloadExcelAction(Request $request)
+	{
+		//Guardado en base de datos
+		$query = 'SELECT * FROM user';
+		$result = $this->container->get('database')->execute($query);
+	
+		$view = $this->templating->render('Main/downloadExcel.php', array(
+			'result' => $result
+		));
+	
+		$response = new Response($view); 
+		$response->headers->set('Content-Type', 'application/octet-stream');
+		$response->headers->set('Content-Disposition', 'attachment; filename=registros.xls');
+		$response->headers->set('Pragma', 'no-cache');
+		$response->headers->set('Expires', '0');
+		
+		return $response;
 	}
 	
 	protected function getViewsDir()

@@ -10,7 +10,7 @@
 		data-content="Todos los campos son obligatorios." 
 		data-placement="top">
 		
-		<img src="images/conectate_fb.png" class="conectateFb" />
+		<img src="images/conectate_fb.png" class="conectateFb img-responsive" />
 		
 		<fieldset>
 			<label for="contact_name" class="fullLabel">Nombre</label>
