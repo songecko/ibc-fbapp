@@ -46,9 +46,9 @@ body.mobile section#thanks {
 }
 
 body.mobile section#thanks .exitButton {
-	width: 50%;
-	top: 62%;
-	right: 30px;
+	width: 38%;
+	top: 67%;
+	right: 24px;
 }
 
 body.mobile section#thanks .exitButton img {
@@ -72,7 +72,7 @@ body.mobile #footer a.rulesButton {
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width : 320px) {
 	section#form form fieldset {
-		top: 55px;
+		top: 25px;
 	}
 	
 	section#form form fieldset label.fullLabel {
@@ -88,7 +88,7 @@ body.mobile #footer a.rulesButton {
 	}
 	
 	section#form form fieldset p.terms {
-		margin-top: 5px;
+		margin-top: 15px;
 	}
 	
 	section#form form fieldset p input {
@@ -101,7 +101,7 @@ body.mobile #footer a.rulesButton {
 	}
 	
 	section#form form .actions {
-		top: 399px;
+		top: 390px;
 		left: 44px;
 	}
 	

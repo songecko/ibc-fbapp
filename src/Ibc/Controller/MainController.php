@@ -70,7 +70,10 @@ class MainController extends Controller
 				$ret_obj = $facebook->api('/me/feed', 'POST',
 						array(
 								'link' => $facebook->getAppHost(),
-								'message' => 'Estoy participando en la promoción de IBC. Visita: '.$facebook->getAppHost().'.'
+								'name' => '¡CONÉCTATE CON TU CORILLO DE IBC!',
+								'message' => 'ÚNETE A LA ASOCIACIÓN	DE EX ALUMNOS. COMPARTE TU EXPERIENCIA, FOTOS Y RECIBE BENEFICIOS ÚNICOS.',
+								'caption' => 'ÚNETE A LA ASOCIACIÓN	DE EX ALUMNOS. COMPARTE TU EXPERIENCIA, FOTOS Y RECIBE BENEFICIOS ÚNICOS.',
+								'picture' => $facebook->getAppHost().'/images/facebook-link-picture.jpg'
 						)
 				);
 				$response['fb_post'] = true;

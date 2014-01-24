@@ -25,7 +25,7 @@ $(document).ready(function()
 		},
 		invalidHandler: function(event, validator)
 		{
-			//$('section#form form').popover('show');
+			$('section#form form fieldset').popover('show');
 		},
 		submitHandler: function(form)
 		{

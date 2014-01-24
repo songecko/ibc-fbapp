@@ -17,7 +17,6 @@
          url('../fonts/gotham-bold-webfont.svg#gothambold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 html, body {
@@ -87,23 +86,32 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 .popover {
-	background-color: rgba(218, 168, 92, .7);
-	color: #941014;
+	/*background-color: rgba(218, 168, 92, .7);*/
+	color: #2F79AE;
+	transform: rotate(-9.4deg);
+	-ms-transform: rotate(-9.4deg);
+	-webkit-transform: rotate(-9.4deg);
 }
 
 .popover .arrow:after {
-	border-top-color: rgba(218, 168, 92, .7) !important;
+	/*border-top-color: rgba(218, 168, 92, .7) !important;*/
 }
 
 .popover-title {
-	background-color: rgba(218, 168, 92, .7);
+	/*background-color: rgba(218, 168, 92, .7);*/
 	text-align: center;
 	text-transform: uppercase;
 	border: 0;
+	color: #2F79AE !important;
 }
 
 .popover-content {
 	text-align: center;
+	color: #2F79AE;
+}
+
+.popover.right {
+	margin-left: -20px;
 }
 
 header {
@@ -165,7 +173,8 @@ section#form form h3 {
 
 section#form form fieldset {
 	position: absolute;
-	top: 82px;
+	top: 40px;
+	left: 0;
 	transform: rotate(-9.4deg);
 	-ms-transform: rotate(-9.4deg);
 	-webkit-transform: rotate(-9.4deg);
@@ -179,12 +188,12 @@ section#form form fieldset label.fullLabel {
 	font-size: 13px;
 	color: #2F79AE;
 	font-weight: bold;
-	margin: 8px 0 0 0;
+	margin: 12px 0 0 0;
 	-webkit-backface-visibility: hidden;
 }
 
 section#form form fieldset input.error {
-	background: url('../images/fielderror-back.png') no-repeat !important;	
+	/*background: url('../images/fielderror-back.png') no-repeat !important;*/	
 }
 
 section#form form fieldset input.fullInput {
@@ -199,7 +208,7 @@ section#form form fieldset input.fullInput {
 
 section#form form fieldset p {
 	width: 100%;
-	margin: 5px 0 0 0;
+	margin: 10px 0 0 0;
 }
 
 section#form form fieldset p.terms {
@@ -248,8 +257,8 @@ section#thanks {
 
 section#thanks .exitButton {
 	position: absolute;
-	right: 30px;
-	top: 566px;
+	right: 90px;
+	top: 596px;
 }
 
 #footer {

@@ -5,14 +5,15 @@
 
 <section id="form"<?php echo $facebook->getUser()?' style="display: block;"':''?>>
 	<img src="images/<?php echo $isMobile?'mobile/':''?>form-background.jpg" />
-	<form action="#" method="post" 
-		data-title="Error en la validación" 
-		data-content="Todos los campos son obligatorios." 
-		data-placement="top">
+	<form action="#" method="post">
 		
-		<img src="images/conectate_fb.png" class="conectateFb img-responsive" />
+		<!-- <img src="images/conectate_fb.png" class="conectateFb img-responsive" /> -->
 		
-		<fieldset>
+		<fieldset
+			data-title="Error en la validación" 
+			data-content="Todos los campos son obligatorios." 
+			data-placement="auto left"
+		>
 			<label for="contact_name" class="fullLabel">Nombre</label>
 			<input type="text" name="register[name]" id="contact_name" class="fullInput"
 				data-rule-required="true" 
@@ -31,11 +32,17 @@
 				data-rule-email="true"
 			/>
 			<label for="contact_recinto" class="fullLabel">Recinto</label>
-			<input type="text" name="register[recinto]" id="contact_recinto" class="fullInput" />
+			<input type="text" name="register[recinto]" id="contact_recinto" class="fullInput"
+				data-rule-required="true" 
+			/>
 			<label for="contact_programa" class="fullLabel">Programa de estudio</label>
-			<input type="text" name="register[programa]" id="contact_programa" class="fullInput" />
+			<input type="text" name="register[programa]" id="contact_programa" class="fullInput"
+				data-rule-required="true" 
+			/>
 			<label for="contact_anio" class="fullLabel">Año de graduación</label>
-			<input type="text" name="register[anio]" id="contact_anio" class="fullInput" />
+			<input type="text" name="register[anio]" id="contact_anio" class="fullInput"
+				data-rule-required="true" 
+			/>
 			
 			<p class="clearfix terms">
 				<input type="checkbox" name="register[terms]" id="contact_terms"
@@ -58,4 +65,5 @@
 
 <section id="thanks">
 	<img src="images/<?php echo $isMobile?'mobile/':''?>thanks-background.jpg" />
+	<a href="https://www.facebook.com/ibanca" target="_top" class="exitButton"><img src="images/exitButton.png" /></a>
 </section>
