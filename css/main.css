@@ -23,7 +23,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	width: 810px;
-	max-height: 1118px;
+	/*max-height: 1118px;**/
 	font-family: "gothammedium", "Helvetica Neue", Helvetica,Arial, sans-serif;
 	overflow-x: hidden;
 	position: relative;
@@ -87,6 +87,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 .popover {
 	/*background-color: rgba(218, 168, 92, .7);*/
+	width: 200px;
 	color: #2F79AE;
 	transform: rotate(-9.4deg);
 	-ms-transform: rotate(-9.4deg);
@@ -112,6 +113,10 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 .popover.right {
 	margin-left: -20px;
+}
+
+.popover.left {
+	margin-left: 10px;
 }
 
 header {

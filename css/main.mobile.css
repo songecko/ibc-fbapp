@@ -109,3 +109,27 @@ body.mobile #footer a.rulesButton {
 		width: 100%;
 	}
 }
+
+@media only screen and (min-width : 960px) {
+	
+	body.mobile section#form form fieldset input.fullInput {
+		height: 56px;
+	}
+	
+	section#form form fieldset label.fullLabel {
+		margin: 62px 0 0 0;
+	}
+	
+	section#form form fieldset p.terms {
+		margin-top: 40px;
+	}
+	
+	section#form form fieldset p {
+		margin: 40px 0 0 0;
+	}
+	
+	section#form form .actions {
+		top: 1100px;
+		left: 250px;
+	}
+}

@@ -13,11 +13,11 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css"> 
-        <?php if($container->get('mobile_detect')->isMobile()): ?>
+        <?php if(!$container->get('mobile_detect')->isMobile()): ?>
         <link rel="stylesheet" href="css/main.mobile.css">
         <?php endif; ?>     
     </head>
-    <body<?php echo $container->get('mobile_detect')->isMobile()?' class="mobile"':''?>>
+    <body<?php echo !$container->get('mobile_detect')->isMobile()?' class="mobile"':''?>>
     	<header>
     		<a href="http://www.ibanca.net" target="_blank"><img src="images/ibanca.png"></a>
     	</header>

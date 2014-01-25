@@ -12,7 +12,7 @@
 		<fieldset
 			data-title="Error en la validación" 
 			data-content="Todos los campos son obligatorios." 
-			data-placement="auto left"
+			data-placement="<?php echo $isMobile?'top':'left' ?>"
 		>
 			<label for="contact_name" class="fullLabel">Nombre</label>
 			<input type="text" name="register[name]" id="contact_name" class="fullInput"

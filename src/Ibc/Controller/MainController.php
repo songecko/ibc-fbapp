@@ -33,7 +33,7 @@ class MainController extends Controller
 		
 		return $this->render('Main/index.php', array(				
 			'facebook' => $facebook,
-			'isMobile' => $isMobile,
+			'isMobile' => !$isMobile,
 			'loginUrl' => $loginUrl
 		));
 	}
