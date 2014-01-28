@@ -41,7 +41,7 @@ $sc->register('facebook', 'Gecky\Facebook\Facebook')
 		'allowSignedRequest' => true, // optional, but should be set to false for non-canvas apps
 		'cookie' => true
 	)))
-	->addMethodCall('init', array('http://tresepic.com/clients/ibc', 'https://www.facebook.com/pages/Testing/1434893610079129?id=1434893610079129&sk=app_571679062921497'))
+	->addMethodCall('init', array('http://tresepic.com/clients/ibc', 'https://www.facebook.com/ibanca/app_571679062921497'))
 ;
 $sc->register('mobile_detect', 'Mobile_Detect');
 $sc->register('gecky.framework', 'Gecky\Framework')
